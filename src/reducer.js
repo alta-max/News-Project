@@ -31,6 +31,7 @@ const reducer = (state, action) => {
         }
         return { ...state, page: prevPage }
       }
+      break
     default:
       throw new Error(`No matching ${action.type} action`)
   }
